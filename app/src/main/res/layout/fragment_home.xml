@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textkategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+        <!-- Text View "Wisata Alam" pertama -->
+        <TextView
+            android:id="@+id/textViewWisataAlam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wisata Alam"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <!-- Container untuk HorizontalScrollView dan ImageView pertama -->
+        <LinearLayout
+            android:id="@+id/container1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/textViewWisataAlam1"
+            android:layout_marginTop="10dp">
+
+            <!-- HorizontalScrollView pertama -->
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:fillViewport="true">
+
+                <!-- LinearLayout untuk ImageView pertama -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- ImageView 1 -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/rounded_background"
+                        android:src="@drawable/rinjani" />
+
+                    <!-- ImageView 2 -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rinjani" />
+
+                    <!-- ImageView 3 -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rinjani" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- Text View "Wisata Alam" kedua -->
+        <TextView
+            android:id="@+id/textViewWisataAlam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wisata rekreasi"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/container1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Container untuk HorizontalScrollView dan ImageView kedua -->
+        <LinearLayout
+            android:id="@+id/container2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/textViewWisataAlam2"
+            android:layout_marginTop="10dp">
+
+            <!-- HorizontalScrollView kedua -->
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:fillViewport="true">
+
+                <!-- LinearLayout untuk ImageView kedua -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- ImageView 1 -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rinjani" />
+
+                    <!-- ImageView 2 -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rinjani" />
+
+                    <!-- ImageView 3 -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rinjani" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <!-- Text View "Wisata Alam" ketiga -->
+        <TextView
+            android:id="@+id/textViewWisataAlam3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wisata Budaya"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/container2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Container untuk HorizontalScrollView dan ImageView ketiga -->
+        <LinearLayout
+            android:id="@+id/container3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/textViewWisataAlam3"
+            android:layout_marginTop="10dp">
+
+            <!-- HorizontalScrollView ketiga -->
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:fillViewport="true">
+
+                <!-- LinearLayout untuk ImageView ketiga -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- ImageView 1 -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rinjani" />
+
+                    <!-- ImageView 2 -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rinjani" />
+
+                    <!-- ImageView 3 -->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rinjani" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
