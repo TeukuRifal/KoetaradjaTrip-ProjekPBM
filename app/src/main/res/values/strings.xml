@@ -3,4 +3,6 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="wisata_name">name</string>
     <string name="description">description\n</string>
+    <string name="place_description">deskripsi</string>
+    <string name="title_story">judul</string>
 </resources>

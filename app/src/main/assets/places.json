@@ -1,37 +1,58 @@
 [
 {
   "name": "Hutan Ketambe",
-  "descripstion": "Hutan Ketambe adalah tujuan wisata alam yang menakjubkan di Provinsi Aceh, Indonesia. Terletak di Taman Nasional Gunung Leuser, hutan ini merupakan rumah bagi beragam flora dan fauna, termasuk spesies langka seperti orangutan Sumatera. Pengunjung dapat menikmati trekking melalui hutan yang lebat dan mengagumkan, serta menikmati pemandangan alam yang menakjubkan selama perjalanan.",
+  "description": "Hutan Ketambe adalah tujuan wisata alam yang menakjubkan di Provinsi Aceh, Indonesia. Terletak di Taman Nasional Gunung Leuser, hutan ini merupakan rumah bagi beragam flora dan fauna, termasuk spesies langka seperti orangutan Sumatera. Pengunjung dapat menikmati trekking melalui hutan yang lebat dan mengagumkan, serta menikmati pemandangan alam yang menakjubkan selama perjalanan.",
   "imageUrl": "https://www.mongabay.co.id/wp-content/uploads/2015/11/JUN5636.jpg",
   "latitude": 3.692492,
   "longitude": 97.652375
 },
 {
 "name": "Pantai Ulee Lheue",
-"descripstion": "Pantai Ulee Lheue adalah surga pantai yang terletak di Banda Aceh, Indonesia. Dengan pasir putih yang lembut dan air biru yang jernih, pantai ini menawarkan pemandangan yang memesona.",
+"description": "Pantai Ulee Lheue adalah surga pantai yang terletak di Banda Aceh, Indonesia. Dengan pasir putih yang lembut dan air biru yang jernih, pantai ini menawarkan pemandangan yang memesona.",
 "imageUrl": "https://assets.pikiran-rakyat.com/crop/0x0:0x0/750x500/photo/2023/08/30/328135236.jpg",
 "latitude": 5.5597465,
 "longitude": 95.2028563
 },
 {
 "name": "Gua Sarang",
-"descripstion": "Gua Sarang di Pulau Weh, Sabang, Aceh, adalah tempat wisata yang menakjubkan dan penuh petualangan. Pengunjung akan memasuki gua yang dipenuhi dengan formasi batu unik seperti stalaktit dan stalakmit, serta kolam alami yang menambah pesonanya.",
+"description": "Gua Sarang di Pulau Weh, Sabang, Aceh, adalah tempat wisata yang menakjubkan dan penuh petualangan. Pengunjung akan memasuki gua yang dipenuhi dengan formasi batu unik seperti stalaktit dan stalakmit, serta kolam alami yang menambah pesonanya.",
 "imageUrl": "https://img.okezone.com/content/2018/02/03/406/1854338/pesona-wisata-gua-sarang-sabang-yang-ramai-dikunjungi-turis-asing-1m31MFO65z.jpg",
 "latitude": 5.8272424,
 "longitude": 95.2496519
 },
 {
 "name": "Air Terjun Kutamalaka",
-"descripstion": "Destinasi wisata ini terletak di kaki gunung Kuta Malaka bagian dari gugusan Bukit Barisan di wilayah Kecamatan Samahani, Kabupaten Aceh Besar.",
+"description": "Destinasi wisata ini terletak di kaki gunung Kuta Malaka bagian dari gugusan Bukit Barisan di wilayah Kecamatan Samahani, Kabupaten Aceh Besar.",
 "imageUrl": "https://wisata-id.com/wp-content/uploads/2023/03/Air-Terjun-Kuta-Malaka-640x445.jpg",
 "latitude": 5.3951268,
 "longitude": 95.3251822
 },
 {
 "name": "Danau Laut Tawar",
-"descripstion": "Danau Laut Tawar adalah sebuah permata alam di Aceh, Indonesia, yang menawarkan pengalaman wisata yang menakjubkan bagi para pengunjungnya.",
+"description": "Danau Laut Tawar adalah sebuah permata alam di Aceh, Indonesia, yang menawarkan pengalaman wisata yang menakjubkan bagi para pengunjungnya.",
 "imageUrl": "https://cdns.klimg.com/merdeka.com/i/w/news/2015/12/12/636676/540x270/pesona-danau-laut-tawar-di-dataran-tinggi-gayo.jpg",
 "latitude": 4.6120284,
 "longitude": 96.8824114
-}
+},
+  {
+    "name": "Mata Ie Hillside Adventure",
+    "description": "Mata Ie Hillside Adventure and Waterpark termasuk salah satu taman rekreasi air keluarga terpopuler di Kabupaten Aceh Besar. Lokasinya tidak jauh dari pusat kota, namun cukup tersembunyi karena berada di area pegunungan yang diapit perbukitan. Sajian panorama alami dengan suasana yang sejuk menyegarkan menjadikan tempat wisata ini selalu ramai dikunjungi banyak orang di waktu liburan atau akhir pekan. Salah satu daya tarik obyek wisata Mata Ie Hillside Adventure and Waterpark adalah berbagai jenis kolam renang yang tersedia untuk segala usia, yaitu kolam khusus balita, kolam anak-anak, kolam dewasa, dan kolam umum. Tempat wisata favorit keluarga di Aceh Besar ini juga menyediakan aneka wahana permainan air yang menarik dan seru untuk dicoba, mulai dari waterboom, lazy river, ember tumpah, hingga tornado slice. Ada pula area outbound yang menawarkan beragam permainan darat dengan sensasi pengalaman menantang, seperti sirkuit ATV, airsoft gun dan flying fox yang meluncur dari atas ketinggian kolam renang.",
+    "imageUrl": "https://image.danautoba.co.id/2023/08/Mataie-Hillside-Adventure-Waterpark.jpg",
+    "latitude": 5.4908925,
+    "longitude": 95.2939564
+  },
+  {
+    "name": "Taman Rusa",
+    "description": "Taman wisata keluarga ini disebut sebagai Taman Rusa. Berada di Desa Lam Tanjong, Kecamatan Sibreh, sekitar 15 menit dari Kota Banda Aceh. Bagi yang ingin menghabiskan akhir pekan bersama keluarga, Taman Rusa cocok untuk dikunjungi. Keindahan dari taman ini bukan tentang gerombolan rusa-rusa seperti nama yang disematkan. Melainkan keasrian hijau alam dan beberapa fasilitas liburan yang terdapat di tempat ini. Taman Rusa dilengkapi berbagai fasilitas permainan anak, seperti tiga kolam pemandian dengan masing-masing ukuran yang berbeda, sepeda air, dan wate boom. Selain itu juga terdapat kolam menyerupai sungai yang mengelilingi sebuah pulau kecil. Di sinilah tempat bermain sepeda air. Ada juga kolam tempat memancing. Pengunjung dapat menyewa alat pancing dan menguji kemahiran memancing berbagai jenis ikan seperti Gurami, Ikan Mas dan Mujair. Usai puas bermain, pengunjung dapat mencicipi berbagai masakan yang dijajakan di tempat ini. Harga kuliner tersebut terbilang murah jika dibanding tempat wisata lain.",
+    "imageUrl": "https://pergiyuk.com/wp-content/uploads/2022/10/Taman-Rusa-Aceh-Besar.jpg",
+    "latitude": 5.4424036,
+    "longitude": 95.3770875
+  },
+  {
+    "name": "Wahana Impian Malaka",
+    "description": "Wahana Impian Malaka adalah sebuah proyek wisata yang terletak di Kabupaten Aceh Besar, Provinsi Aceh, Indonesia. Wahana ini merupakan kompleks rekreasi yang menggabungkan berbagai jenis atraksi dan hiburan untuk pengunjung dari segala usia. Namanya terinspirasi dari jalur perdagangan maritim kuno, Jalur Malaka, yang menghubungkan wilayah Asia Tenggara. Wahana Impian Malaka menawarkan berbagai fasilitas, termasuk wahana air, taman bermain, pusat perbelanjaan, restoran, dan area hijau untuk bersantai. Salah satu daya tarik utamanya adalah wahana air, dengan kolam renang berbagai ukuran dan jenis, termasuk kolam ombak dan seluncuran air yang menarik bagi pengunjung yang mencari sensasi.",
+    "imageUrl": "https://v-images2.antarafoto.com/liburan-akhir-tahun-di-kuta-malaka-pkjlxu-prv.jpg",
+    "latitude": 5.4185639,
+    "longitude": 95.3975449
+  }
 ]

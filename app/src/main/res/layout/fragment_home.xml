@@ -9,202 +9,142 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textkategori"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kategori"
-            android:textSize="24sp"
-            android:textColor="@android:color/black"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"/>
-        <!-- Text View "Wisata Alam" pertama -->
-        <TextView
-            android:id="@+id/textViewWisataAlam1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wisata Alam"
-            android:textSize="24sp"
-            android:textColor="@android:color/black"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"/>
-
-        <!-- Container untuk HorizontalScrollView dan ImageView pertama -->
-        <LinearLayout
-            android:id="@+id/container1"
+        <!-- Card untuk Wisata Alam -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardWisataAlam"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_below="@id/textViewWisataAlam1"
-            android:layout_marginTop="10dp">
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp">
 
-            <!-- HorizontalScrollView pertama -->
-            <HorizontalScrollView
-                android:id="@+id/horizontalScrollView1"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:fillViewport="true">
+                android:padding="10dp">
 
-                <!-- LinearLayout untuk ImageView pertama -->
-                <LinearLayout
+                <TextView
+                    android:id="@+id/Wisata"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:text="Kategori"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"/>
 
-                    <!-- ImageView 1 -->
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:layout_marginRight="10dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:background="@drawable/rounded_background"
-                        android:src="@drawable/rinjani" />
+                <!-- Container untuk HorizontalScrollView dan ImageView pertama -->
+                <LinearLayout
+                    android:id="@+id/container1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@id/Wisata"
+                    android:layout_marginTop="10dp">
 
-                    <!-- ImageView 2 -->
-                    <ImageView
+                    <!-- HorizontalScrollView pertama -->
+                    <HorizontalScrollView
+                        android:id="@+id/horizontalScrollView1"
                         android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:layout_marginRight="10dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/rinjani" />
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:fillViewport="true">
 
-                    <!-- ImageView 3 -->
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/rinjani" />
+                        <!-- LinearLayout untuk ImageView pertama -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- ImageView 1 -->
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_marginRight="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                android:background="@drawable/rounded_background"
+                                android:src="@drawable/rinjani" />
+
+                            <!-- ImageView 2 -->
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_marginRight="10dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/rinjani" />
+
+                            <!-- ImageView 3 -->
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/rinjani" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
                 </LinearLayout>
-            </HorizontalScrollView>
-        </LinearLayout>
-
-        <!-- Text View "Wisata Alam" kedua -->
-        <TextView
-            android:id="@+id/textViewWisataAlam2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wisata rekreasi"
-            android:textSize="24sp"
-            android:textColor="@android:color/black"
-            android:layout_below="@id/container1"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"/>
-
-        <!-- Container untuk HorizontalScrollView dan ImageView kedua -->
-        <LinearLayout
-            android:id="@+id/container2"
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBawah"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_below="@id/textViewWisataAlam2"
-            android:layout_marginTop="10dp">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardWisataAlam"
+            android:layout_marginTop="30dp">
 
-            <!-- HorizontalScrollView kedua -->
-            <HorizontalScrollView
-                android:id="@+id/horizontalScrollView2"
+            <!-- LinearLayout untuk gambar horizontal -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:fillViewport="true">
+                android:orientation="horizontal"
+                android:padding="16dp">
 
-                <!-- LinearLayout untuk ImageView kedua -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <!-- ImageView pertama -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_background"
+                    android:src="@drawable/rinjani" />
+
+                <!-- Teks di bawah ImageView pertama -->
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:text="Homestay"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginEnd="8dp" />
 
-                    <!-- ImageView 1 -->
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:layout_marginRight="10dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/rinjani" />
+                <!-- ImageView kedua -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_background"
+                    android:src="@drawable/rinjani" />
 
-                    <!-- ImageView 2 -->
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:layout_marginRight="10dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/rinjani" />
-
-                    <!-- ImageView 3 -->
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/rinjani" />
-                </LinearLayout>
-            </HorizontalScrollView>
-        </LinearLayout>
-
-        <!-- Text View "Wisata Alam" ketiga -->
-        <TextView
-            android:id="@+id/textViewWisataAlam3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wisata Budaya"
-            android:textSize="24sp"
-            android:textColor="@android:color/black"
-            android:layout_below="@id/container2"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"/>
-
-        <!-- Container untuk HorizontalScrollView dan ImageView ketiga -->
-        <LinearLayout
-            android:id="@+id/container3"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_below="@id/textViewWisataAlam3"
-            android:layout_marginTop="10dp">
-
-            <!-- HorizontalScrollView ketiga -->
-            <HorizontalScrollView
-                android:id="@+id/horizontalScrollView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:fillViewport="true">
-
-                <!-- LinearLayout untuk ImageView ketiga -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <!-- Teks di bawah ImageView kedua -->
+                <TextView
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:text="Paket Wisata"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:gravity="center" />
 
-                    <!-- ImageView 1 -->
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:layout_marginRight="10dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/rinjani" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-                    <!-- ImageView 2 -->
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:layout_marginRight="10dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/rinjani" />
 
-                    <!-- ImageView 3 -->
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/rinjani" />
-                </LinearLayout>
-            </HorizontalScrollView>
-        </LinearLayout>
     </RelativeLayout>
 </ScrollView>
