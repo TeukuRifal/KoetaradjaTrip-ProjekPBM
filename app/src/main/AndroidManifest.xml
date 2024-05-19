@@ -32,6 +32,8 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBgnQvEzUNW7PfvQHuuuLqIaWB-sfKequc" />
 
+        <activity android:name=".halaman.DetailActivity" />
+
         <activity
             android:name=".halaman.SearchFragment"
             android:exported="false"

@@ -1,5 +1,6 @@
 package com.pbm.koetaradjatrip.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,8 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.pbm.koetaradjatrip.R
 import com.pbm.koetaradjatrip.models.Place
+import com.pbm.koetaradjatrip.halaman.DetailActivity
 
-class PlaceAdapter(private val places: List<Place>) :
+class PlaceAdapter(private var places: List<Place>) :
     RecyclerView.Adapter<PlaceAdapter.PlaceViewHolder>() {
 
     inner class PlaceViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -24,6 +26,16 @@ class PlaceAdapter(private val places: List<Place>) :
             Glide.with(itemView.context)
                 .load(place.imageUrl)
                 .into(placeImage)
+
+            itemView.setOnClickListener {
+                val context = itemView.context
+                val intent = Intent(context, DetailActivity::class.java).apply {
+                    putExtra("EXTRA_PLACE_NAME", place.name)
+                    putExtra("EXTRA_PLACE_DESCRIPTION", place.description)
+                    putExtra("EXTRA_PLACE_IMAGE_URL", place.imageUrl)
+                }
+                context.startActivity(intent)
+            }
         }
     }
 
@@ -39,5 +51,10 @@ class PlaceAdapter(private val places: List<Place>) :
 
     override fun getItemCount(): Int {
         return places.size
+    }
+
+    fun updatePlaces(newPlaces: List<Place>) {
+        places = newPlaces
+        notifyDataSetChanged()
     }
 }

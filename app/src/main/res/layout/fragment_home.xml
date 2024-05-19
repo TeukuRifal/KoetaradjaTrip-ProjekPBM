@@ -3,148 +3,314 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <!-- Card untuk Wisata Alam -->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardWisataAlam"
+        <!-- Card untuk Kategori -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="8dp">
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp">
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:padding="16dp">
 
                 <TextView
-                    android:id="@+id/Wisata"
+                    android:id="@+id/tvKategori"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Kategori"
+                    android:text="Selamat Datang"
                     android:textSize="20sp"
                     android:textColor="@android:color/black"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="16dp"/>
+                    android:textStyle="bold" />
 
-                <!-- Container untuk HorizontalScrollView dan ImageView pertama -->
-                <LinearLayout
-                    android:id="@+id/container1"
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:layout_below="@id/Wisata"
-                    android:layout_marginTop="10dp">
-
-                    <!-- HorizontalScrollView pertama -->
-                    <HorizontalScrollView
-                        android:id="@+id/horizontalScrollView1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="8dp"
-                        android:fillViewport="true">
-
-                        <!-- LinearLayout untuk ImageView pertama -->
-                        <LinearLayout
+                <!-- Horizontal Scroll View untuk Kategori Gambar -->
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:src="@drawable/rinjani"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
-                            <!-- ImageView 1 -->
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="250dp"
-                                android:layout_marginRight="10dp"
-                                android:adjustViewBounds="true"
-                                android:scaleType="centerCrop"
-                                android:background="@drawable/rounded_background"
-                                android:src="@drawable/rinjani" />
-
-                            <!-- ImageView 2 -->
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="250dp"
-                                android:layout_marginRight="10dp"
-                                android:adjustViewBounds="true"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/rinjani" />
-
-                            <!-- ImageView 3 -->
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="250dp"
-                                android:adjustViewBounds="true"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/rinjani" />
-                        </LinearLayout>
-                    </HorizontalScrollView>
-                </LinearLayout>
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardBawah"
+        <!-- Card untuk Opsi lainnya -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/cardWisataAlam"
-            android:layout_marginTop="30dp">
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
 
-            <!-- LinearLayout untuk gambar horizontal -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:padding="16dp">
 
-                <!-- ImageView pertama -->
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:background="@drawable/rounded_background"
-                    android:src="@drawable/rinjani" />
-
-                <!-- Teks di bawah ImageView pertama -->
                 <TextView
-                    android:layout_width="0dp"
+                    android:id="@+id/tvOpsiLainnya"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Homestay"
+                    android:text="Opsi Lainnya"
+                    android:textSize="20sp"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:gravity="center"
-                    android:layout_marginEnd="8dp" />
+                    android:textStyle="bold" />
 
-                <!-- ImageView kedua -->
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    android:adjustViewBounds="true"
-                    android:scaleType="centerCrop"
-                    android:background="@drawable/rounded_background"
-                    android:src="@drawable/rinjani" />
-
-                <!-- Teks di bawah ImageView kedua -->
-                <TextView
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Paket Wisata"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:gravity="center" />
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp">
 
+                    <!-- Opsi 1: Homestay -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="8dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/rounded_background"
+                            android:src="@drawable/homestay" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Homestay"
+                            android:textColor="@android:color/black"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                    <!-- Opsi 2: Paket Wisata -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginBottom="8dp"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/rounded_background"
+                            android:src="@drawable/paketwisata" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paket Wisata"
+                            android:textColor="@android:color/black"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
+        <!-- Section Kuliner Khas -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
 
-    </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvKulinerKhas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kuliner Khas"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nikmati beragam kuliner khas Aceh yang lezat."
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <!-- Kuliner 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mieaceh" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mie Aceh"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mie pedas yang khas dengan rempah-rempah Aceh."
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Kuliner 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/satematang" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sate Matang"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sate daging sapi atau kambing dengan bumbu kacang yang lezat."
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Kuliner 3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/kuahplieku" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kuah Pliek U"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sup khas Aceh yang terbuat dari sayuran dan rempah-rempah."
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Kuliner 4 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ayamtangkap" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ayam Tangkap"
+                                android:textSize="16sp"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ayam goreng dengan daun kari dan rempah khas Aceh."
+                                android:textColor="@android:color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
 </ScrollView>
