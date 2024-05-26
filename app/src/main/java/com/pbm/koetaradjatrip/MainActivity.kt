@@ -7,10 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.pbm.koetaradjatrip.halaman.AboutFragment
+import com.pbm.koetaradjatrip.halaman.AddDataFragment
 import com.pbm.koetaradjatrip.halaman.FavoritFragment
 import com.pbm.koetaradjatrip.halaman.HomeFragment
 import com.pbm.koetaradjatrip.halaman.MapsFragment
 import com.pbm.koetaradjatrip.halaman.SearchFragment
+import com.pbm.koetaradjatrip.halaman.ShowDataFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,12 +34,16 @@ class MainActivity : AppCompatActivity() {
                     replaceFragment(SearchFragment())
                     true
                 }
-                R.id.favorite_page -> {
-                    replaceFragment(FavoritFragment())
+//                R.id.favorite_page -> {
+//                    replaceFragment(FavoritFragment())
+//                    true
+//                }
+                R.id.tambah -> {
+                    replaceFragment(AddDataFragment())
                     true
                 }
-                R.id.activity_map -> {
-                    replaceFragment(MapsFragment())
+                R.id.tampil -> {
+                    replaceFragment(ShowDataFragment())
                     true
                 }
                 R.id.about -> {
@@ -59,6 +65,7 @@ class MainActivity : AppCompatActivity() {
             .replace(R.id.fragment_container, fragment)
             .commit()
     }
+
 
 
 }
