@@ -34,25 +34,88 @@
 "latitude": 4.6120284,
 "longitude": 96.8824114
 },
-  {
+{
     "name": "Mata Ie Hillside Adventure",
     "description": "Mata Ie Hillside Adventure and Waterpark termasuk salah satu taman rekreasi air keluarga terpopuler di Kabupaten Aceh Besar. Lokasinya tidak jauh dari pusat kota, namun cukup tersembunyi karena berada di area pegunungan yang diapit perbukitan. Sajian panorama alami dengan suasana yang sejuk menyegarkan menjadikan tempat wisata ini selalu ramai dikunjungi banyak orang di waktu liburan atau akhir pekan. Salah satu daya tarik obyek wisata Mata Ie Hillside Adventure and Waterpark adalah berbagai jenis kolam renang yang tersedia untuk segala usia, yaitu kolam khusus balita, kolam anak-anak, kolam dewasa, dan kolam umum. Tempat wisata favorit keluarga di Aceh Besar ini juga menyediakan aneka wahana permainan air yang menarik dan seru untuk dicoba, mulai dari waterboom, lazy river, ember tumpah, hingga tornado slice. Ada pula area outbound yang menawarkan beragam permainan darat dengan sensasi pengalaman menantang, seperti sirkuit ATV, airsoft gun dan flying fox yang meluncur dari atas ketinggian kolam renang.",
     "imageUrl": "https://image.danautoba.co.id/2023/08/Mataie-Hillside-Adventure-Waterpark.jpg",
     "latitude": 5.4908925,
     "longitude": 95.2939564
-  },
-  {
+},
+{
     "name": "Taman Rusa",
     "description": "Taman wisata keluarga ini disebut sebagai Taman Rusa. Berada di Desa Lam Tanjong, Kecamatan Sibreh, sekitar 15 menit dari Kota Banda Aceh. Bagi yang ingin menghabiskan akhir pekan bersama keluarga, Taman Rusa cocok untuk dikunjungi. Keindahan dari taman ini bukan tentang gerombolan rusa-rusa seperti nama yang disematkan. Melainkan keasrian hijau alam dan beberapa fasilitas liburan yang terdapat di tempat ini. Taman Rusa dilengkapi berbagai fasilitas permainan anak, seperti tiga kolam pemandian dengan masing-masing ukuran yang berbeda, sepeda air, dan wate boom. Selain itu juga terdapat kolam menyerupai sungai yang mengelilingi sebuah pulau kecil. Di sinilah tempat bermain sepeda air. Ada juga kolam tempat memancing. Pengunjung dapat menyewa alat pancing dan menguji kemahiran memancing berbagai jenis ikan seperti Gurami, Ikan Mas dan Mujair. Usai puas bermain, pengunjung dapat mencicipi berbagai masakan yang dijajakan di tempat ini. Harga kuliner tersebut terbilang murah jika dibanding tempat wisata lain.",
     "imageUrl": "https://pergiyuk.com/wp-content/uploads/2022/10/Taman-Rusa-Aceh-Besar.jpg",
     "latitude": 5.4424036,
     "longitude": 95.3770875
-  },
-  {
+},
+{
     "name": "Wahana Impian Malaka",
     "description": "Wahana Impian Malaka adalah sebuah proyek wisata yang terletak di Kabupaten Aceh Besar, Provinsi Aceh, Indonesia. Wahana ini merupakan kompleks rekreasi yang menggabungkan berbagai jenis atraksi dan hiburan untuk pengunjung dari segala usia. Namanya terinspirasi dari jalur perdagangan maritim kuno, Jalur Malaka, yang menghubungkan wilayah Asia Tenggara. Wahana Impian Malaka menawarkan berbagai fasilitas, termasuk wahana air, taman bermain, pusat perbelanjaan, restoran, dan area hijau untuk bersantai. Salah satu daya tarik utamanya adalah wahana air, dengan kolam renang berbagai ukuran dan jenis, termasuk kolam ombak dan seluncuran air yang menarik bagi pengunjung yang mencari sensasi.",
     "imageUrl": "https://v-images2.antarafoto.com/liburan-akhir-tahun-di-kuta-malaka-pkjlxu-prv.jpg",
     "latitude": 5.4185639,
     "longitude": 95.3975449
-  }
+},
+{
+    "name": "Gua Sarang",
+    "description": "Gua Sarang di Pulau Weh, Sabang, Aceh, adalah tempat wisata yang menakjubkan dan penuh petualangan. Pengunjung akan memasuki gua yang dipenuhi dengan formasi batu unik seperti stalaktit dan stalakmit, serta kolam alami yang menambah pesonanya.",
+    "imageUrl": "https://img.okezone.com/content/2018/02/03/406/1854338/pesona-wisata-gua-sarang-sabang-yang-ramai-dikunjungi-turis-asing-1m31MFO65z.jpg",
+    "latitude": 5.8272424,
+    "longitude": 95.2496519
+},
+{
+    "name": "Air Terjun Blang Kolam",
+    "description": "Air Terjun Blang Kolam adalah air terjun yang indah terletak di Kabupaten Aceh Utara, Aceh. Air terjun ini memiliki ketinggian sekitar 75 meter dan dikelilingi oleh hutan tropis yang rimbun, menjadikannya tempat yang sempurna untuk bersantai dan menikmati keindahan alam.",
+    "imageUrl": "https://i.pinimg.com/originals/03/87/4c/03874c870ce54623179024a5d367bb5a.jpg",
+    "latitude": 5.056897,
+    "longitude": 97.310242
+},
+{
+    "name": "Pulau Rubiah",
+    "description": "Pulau Rubiah terletak di Sabang, Aceh. Pulau ini terkenal dengan taman lautnya yang memukau, menjadikannya destinasi favorit untuk snorkeling dan diving. Pengunjung dapat menikmati keindahan terumbu karang dan berbagai macam biota laut yang eksotis.",
+    "imageUrl": "https://getlost.id/wp-content/uploads/2021/11/rubiah_1779575456.jpg",
+    "latitude": 5.889259,
+    "longitude": 95.255235
+},
+{
+    "name": "Masjid Raya Baiturrahman",
+    "description": "Masjid Raya Baiturrahman adalah ikon Aceh yang berada di Banda Aceh, terkenal dengan arsitektur megahnya. Masjid ini menjadi simbol dari kekuatan dan keteguhan masyarakat Aceh, terutama setelah bertahan dari tsunami 2004.",
+    "imageUrl": "https://www.visitsoutheastasia.travel/wp-content/uploads/2019/11/shutterstock_1017278854-scaled.jpg",
+    "latitude": 5.553227,
+    "longitude": 95.317298
+},
+{
+    "name": "Museum Tsunami Aceh",
+    "description": "Museum Tsunami Aceh dibangun untuk mengenang peristiwa tsunami 2004 yang melanda Aceh. Museum ini memiliki desain arsitektur yang unik dan menyimpan banyak artefak serta cerita tentang kejadian tersebut.",
+    "imageUrl": "https://getlost.id/wp-content/uploads/2021/01/museum-tsunami_1389245348.jpg",
+    "latitude": 5.551048,
+    "longitude": 95.320541
+},
+{
+    "name": "Pantai Lampuuk",
+    "description": "Pantai Lampuuk adalah pantai yang indah dan populer di Aceh Besar, dengan pasir putih yang lembut dan ombak yang cocok untuk berselancar. Pantai ini juga menjadi tempat favorit untuk menikmati matahari terbenam.",
+    "imageUrl": "https://travelspromo.com/wp-content/uploads/2021/07/Pantai-Lampuuk-tampak-dari-atas-Fajri-1362x1022.jpg",
+    "latitude": 5.498592,
+    "longitude": 95.203883
+},
+{
+    "name": "Taman Sari Gunongan",
+    "description": "Taman Sari Gunongan adalah taman bersejarah di Banda Aceh yang dibangun oleh Sultan Iskandar Muda untuk istrinya, Putri Kamaliah. Taman ini memiliki arsitektur yang unik dan menjadi salah satu situs budaya yang penting di Aceh.",
+    "imageUrl": "https://i.pinimg.com/originals/9e/df/2f/9edf2fb4ea9660bc97e8fced8800aa60.jpg",
+    "latitude": 5.551239,
+    "longitude": 95.319500
+},
+{
+    "name": "Danau Laut Tawar",
+    "description": "Danau Laut Tawar terletak di dataran tinggi Gayo, Aceh Tengah. Danau ini dikelilingi oleh pegunungan dan hutan pinus, menawarkan pemandangan alam yang memukau dan udara yang sejuk. Danau ini juga menjadi sumber air penting bagi masyarakat setempat.",
+    "imageUrl": "https://www.itrip.id/wp-content/uploads/2021/08/Daya-Tarik-Danau-Laut-Tawar.jpg",
+    "latitude": 4.617273,
+    "longitude": 96.847383
+},
+{
+    "name": "Pantai Lhoknga",
+    "description": "Pantai Lhoknga adalah pantai yang terletak di barat Banda Aceh, terkenal dengan ombak besar yang cocok untuk berselancar. Pantai ini juga menawarkan pemandangan matahari terbenam yang indah dan menjadi tempat favorit untuk berjemur dan berenang.",
+    "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpariwisataindonesia.id%2Fwp-content%2Fuploads%2F2023%2F08%2FPariwisataIndonesia-Foto-Menikmati-Indahnya-Pesona-Pantai-Lhoknga-di-Aceh-Indonesia-1024x642.png&f=1&nofb=1&ipt=6ddeadf6770c69011e91fdbd4ace8bcbf6f83e6cc7839420ebc4739758719fc1&ipo=images",
+    "latitude": 5.438313,
+    "longitude": 95.172545
+}
 ]
