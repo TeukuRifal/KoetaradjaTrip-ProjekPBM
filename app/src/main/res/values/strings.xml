@@ -5,4 +5,5 @@
     <string name="description">description\n</string>
     <string name="place_description">deskripsi</string>
     <string name="title_story">judul</string>
+    <string name="favorite">favorite\n</string>
 </resources>

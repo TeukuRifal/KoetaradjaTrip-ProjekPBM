@@ -1,4 +1,4 @@
-# ![KoetatadjaTrip](https://example.com/koetatadjaTrip-logo.png)
+# ![KoetaradjaTrip](https://example.com/koetatadjaTrip-logo.png)
 
 Selamat datang di KoetatadjaTrip, aplikasi wisata yang menawarkan pengalaman berwisata yang unik dan menarik di daerah Aceh. Kami berfokus pada memberikan kenyamanan kepada siapa saja yang berkunjung ke Aceh, terutama turis yang ingin menikmati keindahan wisata yang ada di Aceh, baik itu wisata alam, wisata rekreasi, atau wisata budaya & sejarah.
 

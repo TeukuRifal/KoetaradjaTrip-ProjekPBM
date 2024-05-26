@@ -1,16 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".halaman.AboutFragment">
+    android:layout_height="match_parent">
 
-    <!-- Contoh tampilan untuk halaman About -->
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="About Page"
-        android:textSize="24sp"
-        android:layout_centerInParent="true"/>
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/mesjid"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/aboutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="TENTANG KOETARADJA TRIP"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/aboutDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selamat datang di koetaradjaTrip , aplikasi yang dirancang khusus untuk membantu wisatawan menemukan berbagai lokasi wisata menarik di Aceh. Dengan koetaradjaTrip,  Anda dapat menemukan tempat-tempat wisata populer dan juga lokasi-lokasi tersembunyi yang jarang diketahui banyak orang."
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/featureTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apa yang Dapat Anda Lakukan dengan koetaradjaTrip?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/featureList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Rekomendasi Wisata: Dapatkan rekomendasi lokasi wisata berdasarkan minat Anda. Kami menawarkan berbagai jenis tempat, mulai dari pantai, pegunungan, situs sejarah, hingga destinasi budaya.\n- Pencarian Lokasi: Cari tempat wisata favorit Anda secara manual atau gunakan fitur rekomendasi otomatis kami untuk menemukan tujuan menarik yang dekat dengan lokasi Anda saat ini.\n- Deskripsi Lengkap: Setiap lokasi wisata dilengkapi dengan deskripsi lengkap, termasuk informasi tentang aktivitas yang bisa dilakukan, jam buka, biaya masuk, fasilitas yang tersedia, dan informasi lainnya yang berguna.\n- Rute dan Navigasi: Setelah Anda menemukan tempat yang ingin dikunjungi, Anda dapat melihat rute yang disarankan melalui peta interaktif. Ini membantu Anda merencanakan perjalanan dengan lebih mudah.\n- Ulasan dan Rating: Baca ulasan dan lihat rating dari pengguna lain untuk membantu Anda membuat keputusan yang lebih baik tentang tempat yang ingin dikunjungi."
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/missionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Misi Kami"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/missionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kami ingin membantu wisatawan, baik lokal maupun internasional, menemukan keindahan dan keragaman yang ditawarkan oleh Aceh. Dengan aplikasi ini, kami berharap dapat memberikan pengalaman wisata yang lebih menyenangkan dan informatif, serta mendorong perkembangan pariwisata lokal."
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/thankYouTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terima Kasih"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/thankYouDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terima kasih telah menggunakan koetaradjaTrip. Kami selalu berusaha untuk memberikan layanan terbaik dan memperbarui aplikasi kami secara berkala dengan fitur-fitur baru dan informasi terbaru. Jika Anda memiliki saran atau umpan balik, jangan ragu untuk menghubungi kami melalui menu kontak di aplikasi.\n\nSelamat menjelajah Aceh, dan semoga perjalanan Anda penuh petualangan dan kenangan indah."
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/contactTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ada Pertanyaan?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/contactDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hubungi atau SMS Kami\n+6282298489106"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="16dp">
+
+            <ImageView
+                android:id="@+id/whatsappIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_whatsapp"
+                android:layout_marginEnd="16dp" />
+
+            <ImageView
+                android:id="@+id/instagramIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_instagram"
+                android:layout_marginEnd="16dp" />
+
+            <ImageView
+                android:id="@+id/telegramIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_telegram" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
