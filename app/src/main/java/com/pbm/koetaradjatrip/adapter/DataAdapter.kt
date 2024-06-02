@@ -3,13 +3,13 @@ package com.pbm.koetaradjatrip.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.pbm.koetaradjatrip.databinding.ItemDataBinding
 import com.pbm.koetaradjatrip.models.Data
+import androidx.paging.PagingDataAdapter
 
-class DataAdapter(private val onDeleteClick: (Data) -> Unit) : ListAdapter<Data, DataAdapter.DataViewHolder>(DiffCallback()) {
+class DataAdapter(private val onDeleteClick: (Data) -> Unit) : PagingDataAdapter<Data, DataAdapter.DataViewHolder>(DiffCallback()) {
 
     inner class DataViewHolder(private val binding: ItemDataBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(data: Data) {
@@ -33,7 +33,10 @@ class DataAdapter(private val onDeleteClick: (Data) -> Unit) : ListAdapter<Data,
     }
 
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
-        holder.bind(getItem(position))
+        val data = getItem(position)
+        if (data != null) {
+            holder.bind(data)
+        }
     }
 
     class DiffCallback : DiffUtil.ItemCallback<Data>() {

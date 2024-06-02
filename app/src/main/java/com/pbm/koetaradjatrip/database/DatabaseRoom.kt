@@ -1,3 +1,4 @@
+// DatabaseRoom.kt
 package com.pbm.koetaradjatrip.database
 
 import android.content.Context
@@ -6,7 +7,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.pbm.koetaradjatrip.models.Data
 
-@Database(entities = [Data::class], version = 1)
+@Database(entities = [Data::class], version = 1, exportSchema = false)
 abstract class DatabaseRoom : RoomDatabase() {
 
     abstract fun dataDao(): DataDao
@@ -20,7 +21,7 @@ abstract class DatabaseRoom : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     DatabaseRoom::class.java,
-                    "data_database"
+                    "database_name"
                 ).build()
                 INSTANCE = instance
                 instance
