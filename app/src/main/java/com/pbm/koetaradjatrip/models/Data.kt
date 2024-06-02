@@ -5,11 +5,10 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "data")
 data class Data(
-    @PrimaryKey(autoGenerate = true)
-    val id: Int = 0,
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val name: String,
     val description: String,
-    val image: ByteArray // Ubah tipe data menjadi ByteArray untuk menyimpan gambar
+    val image: ByteArray // Assuming the image is stored as a byte array
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true

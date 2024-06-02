@@ -1,16 +1,15 @@
 package com.pbm.koetaradjatrip.adapter
 
-
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.pbm.koetaradjatrip.databinding.ItemDataBinding
 import com.pbm.koetaradjatrip.models.Data
 
-class DataAdapter : RecyclerView.Adapter<DataAdapter.DataViewHolder>() {
-
-    private var dataList: List<Data> = emptyList()
+class DataAdapter(private val onDeleteClick: (Data) -> Unit) : ListAdapter<Data, DataAdapter.DataViewHolder>(DiffCallback()) {
 
     inner class DataViewHolder(private val binding: ItemDataBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(data: Data) {
@@ -20,6 +19,11 @@ class DataAdapter : RecyclerView.Adapter<DataAdapter.DataViewHolder>() {
             Glide.with(binding.imageView.context)
                 .load(data.image)
                 .into(binding.imageView)
+
+            // Set onClickListener for delete button
+            binding.delete.setOnClickListener {
+                onDeleteClick(data)
+            }
         }
     }
 
@@ -29,15 +33,16 @@ class DataAdapter : RecyclerView.Adapter<DataAdapter.DataViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
-        holder.bind(dataList[position])
+        holder.bind(getItem(position))
     }
 
-    override fun getItemCount(): Int {
-        return dataList.size
-    }
+    class DiffCallback : DiffUtil.ItemCallback<Data>() {
+        override fun areItemsTheSame(oldItem: Data, newItem: Data): Boolean {
+            return oldItem.id == newItem.id
+        }
 
-    fun submitList(list: List<Data>) {
-        dataList = list
-        notifyDataSetChanged()
+        override fun areContentsTheSame(oldItem: Data, newItem: Data): Boolean {
+            return oldItem == newItem
+        }
     }
 }

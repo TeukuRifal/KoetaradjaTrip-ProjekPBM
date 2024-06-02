@@ -1,11 +1,11 @@
 package com.pbm.koetaradjatrip.halaman
 
+import DataViewModel
 import android.Manifest
 import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
 import android.os.Build
 import android.os.Bundle
@@ -20,7 +20,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import com.pbm.koetaradjatrip.R
+import androidx.lifecycle.ViewModelProvider
 import com.pbm.koetaradjatrip.databinding.FragmentAddDataBinding
 import com.pbm.koetaradjatrip.models.Data
 import com.pbm.koetaradjatrip.models.DataViewModel
@@ -37,6 +37,8 @@ class AddDataFragment : Fragment() {
 
     private val SELECT_IMAGE_REQUEST = 1
     private val TAKE_PHOTO_REQUEST = 2
+
+    private lateinit var viewModel: DataViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -63,6 +65,8 @@ class AddDataFragment : Fragment() {
         buttonAdd.setOnClickListener {
             saveToDatabase()
         }
+
+        viewModel = ViewModelProvider(this).get(DataViewModel::class.java)
 
         return rootView
     }
@@ -128,7 +132,7 @@ class AddDataFragment : Fragment() {
 
             if (name.isNotEmpty() && description.isNotEmpty()) {
                 val data = Data(name = name, description = description, image = imageByteArray)
-                DataViewModel(requireActivity().application).insertData(data)
+                viewModel.insertDataFromImage(data)
 
                 clearFields()
                 Toast.makeText(requireContext(), "Data saved successfully", Toast.LENGTH_SHORT).show()

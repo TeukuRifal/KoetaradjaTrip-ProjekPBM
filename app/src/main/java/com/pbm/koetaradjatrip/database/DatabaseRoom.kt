@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.pbm.koetaradjatrip.models.Data
 
-@Database(entities = [Data::class], version = 2)
+@Database(entities = [Data::class], version = 1)
 abstract class DatabaseRoom : RoomDatabase() {
 
     abstract fun dataDao(): DataDao
@@ -21,7 +21,7 @@ abstract class DatabaseRoom : RoomDatabase() {
                     context.applicationContext,
                     DatabaseRoom::class.java,
                     "data_database"
-                ).fallbackToDestructiveMigration().build()
+                ).build()
                 INSTANCE = instance
                 instance
             }
