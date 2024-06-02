@@ -26,6 +26,7 @@ import com.pbm.koetaradjatrip.models.Data
 import com.pbm.koetaradjatrip.models.DataViewModel
 import java.io.ByteArrayOutputStream
 
+
 class AddDataFragment : Fragment() {
 
     private lateinit var imageView: ImageView
