@@ -24,7 +24,7 @@ class DataRepository(private val dataDao: DataDao) {
         dataDao.updateData(data)
     }
 
-    suspend fun deleteData(id: Data) {
+    suspend fun deleteData(id: Int) {
         dataDao.deleteData(id)
     }
 }

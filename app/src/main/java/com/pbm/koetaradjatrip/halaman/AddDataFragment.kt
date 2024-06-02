@@ -1,6 +1,5 @@
 package com.pbm.koetaradjatrip.halaman
 
-import DataViewModel
 import android.Manifest
 import android.app.Activity
 import android.content.Intent
@@ -25,6 +24,7 @@ import com.pbm.koetaradjatrip.databinding.FragmentAddDataBinding
 import com.pbm.koetaradjatrip.models.Data
 import com.pbm.koetaradjatrip.models.DataViewModel
 import java.io.ByteArrayOutputStream
+
 
 class AddDataFragment : Fragment() {
 
