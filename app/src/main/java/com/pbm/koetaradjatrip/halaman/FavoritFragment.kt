@@ -34,7 +34,7 @@ class FavoritFragment : Fragment() {
         sharedPreferences = requireContext().getSharedPreferences("Favorites", Context.MODE_PRIVATE)
         placeAdapter = PlaceAdapter(getFavoritePlaces())
 
-        val recyclerView: RecyclerView = view.findViewById(R.id.favorite_recycler_view)
+        val recyclerView: RecyclerView = view.findViewById(R.id.recyclerViewFavorite)
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = placeAdapter
     }

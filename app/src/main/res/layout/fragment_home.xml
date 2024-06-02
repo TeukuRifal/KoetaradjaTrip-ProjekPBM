@@ -36,10 +36,11 @@
                     android:textStyle="bold" />
 
                 <!-- Horizontal Scroll View untuk Kategori Gambar -->
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/rinjani"/>
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="233dp" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 

@@ -10,6 +10,7 @@ import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputLayout
 import com.pbm.koetaradjatrip.R
 import com.pbm.koetaradjatrip.adapter.PlaceAdapter
@@ -23,6 +24,7 @@ class SearchFragment : Fragment() {
     private lateinit var placeAdapter: PlaceAdapter
     private lateinit var editTextSearch: EditText
     private lateinit var textInputLayout: TextInputLayout
+    private lateinit var buttonFavorites: MaterialButton
 
     private var places: List<Place> = emptyList()
 
@@ -44,6 +46,15 @@ class SearchFragment : Fragment() {
         // Initialize search components
         textInputLayout = rootView.findViewById(R.id.text_input_layout_search)
         editTextSearch = rootView.findViewById(R.id.edit_text_search)
+
+        // Initialize favorites button
+        buttonFavorites = rootView.findViewById(R.id.button_favorites)
+        buttonFavorites.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, FavoritFragment())
+                .addToBackStack(null)
+                .commit()
+        }
 
         // Add TextWatcher to EditText for dynamic search
         editTextSearch.addTextChangedListener(object : TextWatcher {

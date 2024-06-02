@@ -41,7 +41,7 @@ class DetailActivity : AppCompatActivity() {
         Glide.with(this).load(placeImageUrl).into(ivPhoto)
 
         // Create a Place object
-        place = Place(placeName ?: "", placeDesc ?: "", placeImageUrl ?: "")
+        place = Place(placeName ?: "", placeDesc ?: "", placeImageUrl ?: "", 0.0,0.0)
 
         // Check if current place is favorite and set the favorite button accordingly
         favoriteButton.setImageResource(

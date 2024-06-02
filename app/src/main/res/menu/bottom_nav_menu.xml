@@ -9,13 +9,13 @@
         android:title="Pencarian"
         android:icon="@drawable/ic_search"/>
     <item
-        android:id="@+id/favorite_page"
-        android:title="Favorit"
-        android:icon="@drawable/ic_bookmark"/>
+        android:id="@+id/tambah"
+        android:title="tambah"
+        android:icon="@drawable/baseline_add_circle_24"/>
     <item
-        android:id="@+id/activity_map"
-        android:title="Maps"
-        android:icon="@drawable/ic_map"/>
+        android:id="@+id/tampil"
+        android:title="tampil"
+        android:icon="@drawable/baseline_add_photo_alternate_24"/>
     <item
         android:id="@+id/about"
         android:title="About"
