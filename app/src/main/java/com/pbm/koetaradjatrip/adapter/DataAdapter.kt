@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.pbm.koetaradjatrip.databinding.ItemDataBinding
 import com.pbm.koetaradjatrip.models.Data
 import androidx.paging.PagingDataAdapter
+import java.io.File
 
 class DataAdapter(private val onDeleteClick: (Data) -> Unit) : PagingDataAdapter<Data, DataAdapter.DataViewHolder>(DiffCallback()) {
 
@@ -15,9 +16,9 @@ class DataAdapter(private val onDeleteClick: (Data) -> Unit) : PagingDataAdapter
         fun bind(data: Data) {
             binding.textViewName.text = data.name
             binding.textViewDescription.text = data.description
-            // Load gambar dari byte array menggunakan Glide
+            // Load gambar dari path menggunakan Glide
             Glide.with(binding.imageView.context)
-                .load(data.image)
+                .load(File(data.imagePath))
                 .into(binding.imageView)
 
             // Set onClickListener for delete button
@@ -25,6 +26,7 @@ class DataAdapter(private val onDeleteClick: (Data) -> Unit) : PagingDataAdapter
                 onDeleteClick(data)
             }
         }
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DataViewHolder {
@@ -48,4 +50,8 @@ class DataAdapter(private val onDeleteClick: (Data) -> Unit) : PagingDataAdapter
             return oldItem == newItem
         }
     }
+    interface OnItemClickListener {
+        fun onItemClick(data: Data)
+    }
+
 }

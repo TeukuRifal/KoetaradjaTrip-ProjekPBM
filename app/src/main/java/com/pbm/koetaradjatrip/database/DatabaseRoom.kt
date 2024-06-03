@@ -1,4 +1,3 @@
-// DatabaseRoom.kt
 package com.pbm.koetaradjatrip.database
 
 import android.content.Context
@@ -21,8 +20,11 @@ abstract class DatabaseRoom : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     DatabaseRoom::class.java,
-                    "database_name"
-                ).build()
+                    "data_database"
+                )
+                    // Optional: To allow destructive migrations
+                    .fallbackToDestructiveMigration()
+                    .build()
                 INSTANCE = instance
                 instance
             }

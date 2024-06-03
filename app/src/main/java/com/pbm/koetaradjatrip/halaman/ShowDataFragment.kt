@@ -32,16 +32,16 @@ class ShowDataFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        viewModel = ViewModelProvider(this).get(DataViewModel::class.java)
         adapter = DataAdapter { data ->
-            viewModel.deleteData(data.id)
+            viewModel.deleteData(data)
         }
-        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+
+        binding.recyclerView.layoutManager = LinearLayoutManager(context)
         binding.recyclerView.adapter = adapter
 
-        viewModel = ViewModelProvider(this).get(DataViewModel::class.java)
-
         lifecycleScope.launch {
-            viewModel.allData.collectLatest { pagingData ->
+            viewModel.getAllData().collectLatest { pagingData ->
                 adapter.submitData(pagingData)
             }
         }

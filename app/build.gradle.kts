@@ -63,8 +63,7 @@ dependencies {
     // Paging
     implementation("androidx.paging:paging-runtime-ktx:3.3.0")
     implementation("androidx.paging:paging-common-android:3.3.0")
-
-
+    
     // Lifecycle
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")

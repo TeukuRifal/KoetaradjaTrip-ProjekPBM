@@ -1,6 +1,5 @@
 package com.pbm.koetaradjatrip.halaman
 
-
 import android.Manifest
 import android.app.Activity
 import android.content.Intent
@@ -25,7 +24,8 @@ import com.pbm.koetaradjatrip.databinding.FragmentAddDataBinding
 import com.pbm.koetaradjatrip.models.Data
 import com.pbm.koetaradjatrip.models.DataViewModel
 import java.io.ByteArrayOutputStream
-
+import java.io.File
+import java.io.FileOutputStream
 
 class AddDataFragment : Fragment() {
 
@@ -119,20 +119,25 @@ class AddDataFragment : Fragment() {
         }
     }
 
+    private fun saveImageToFileSystem(bitmap: Bitmap): String {
+        val file = File(requireContext().filesDir, "${System.currentTimeMillis()}.jpg")
+        FileOutputStream(file).use { out ->
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out)
+        }
+        return file.absolutePath
+    }
+
     private fun saveToDatabase() {
         val drawable = imageView.drawable
         if (drawable != null) {
             val bitmap = (drawable as BitmapDrawable).bitmap
-            val byteArrayOutputStream = ByteArrayOutputStream()
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream)
-            val imageByteArray = byteArrayOutputStream.toByteArray()
-            byteArrayOutputStream.close()
+            val imagePath = saveImageToFileSystem(bitmap)
 
             val name = editTextName.text.toString().trim()
             val description = editTextDescription.text.toString().trim()
 
             if (name.isNotEmpty() && description.isNotEmpty()) {
-                val data = Data(name = name, description = description, image = imageByteArray)
+                val data = Data(name = name, description = description, imagePath = imagePath)
                 viewModel.insertDataFromImage(data)
 
                 clearFields()
