@@ -10,7 +10,7 @@ import com.pbm.koetaradjatrip.models.Data
 import androidx.paging.PagingDataAdapter
 import java.io.File
 
-class DataAdapter(private val onDeleteClick: (Data) -> Unit) : PagingDataAdapter<Data, DataAdapter.DataViewHolder>(DiffCallback()) {
+class DataAdapter(private val onItemClickListener: OnItemClickListener) : PagingDataAdapter<Data, DataAdapter.DataViewHolder>(DiffCallback()) {
 
     inner class DataViewHolder(private val binding: ItemDataBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(data: Data) {
@@ -21,9 +21,14 @@ class DataAdapter(private val onDeleteClick: (Data) -> Unit) : PagingDataAdapter
                 .load(File(data.imagePath))
                 .into(binding.imageView)
 
-            // Set onClickListener for delete button
+            // Set onClickListener untuk setiap item
+            binding.root.setOnClickListener {
+                onItemClickListener.onItemClick(data)
+            }
+
+            // Set onClickListener untuk tombol delete
             binding.delete.setOnClickListener {
-                onDeleteClick(data)
+                onItemClickListener.onDeleteClick(data)
             }
         }
 
@@ -50,8 +55,10 @@ class DataAdapter(private val onDeleteClick: (Data) -> Unit) : PagingDataAdapter
             return oldItem == newItem
         }
     }
+
     interface OnItemClickListener {
         fun onItemClick(data: Data)
+        fun onDeleteClick(data: Data)
     }
-
 }
+

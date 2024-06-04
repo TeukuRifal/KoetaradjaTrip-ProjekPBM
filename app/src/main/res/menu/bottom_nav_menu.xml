@@ -10,7 +10,7 @@
         android:icon="@drawable/ic_search"/>
     <item
         android:id="@+id/tambah"
-        android:title="tambah"
+        android:title="Galeri"
         android:icon="@drawable/baseline_add_circle_24"/>
     <item
         android:id="@+id/tampil"

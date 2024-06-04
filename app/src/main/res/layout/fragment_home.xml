@@ -30,7 +30,7 @@
                     android:id="@+id/tvKategori"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Selamat Datang"
+                    android:text="Wisata Terdekat"
                     android:textSize="20sp"
                     android:textColor="@android:color/black"
                     android:textStyle="bold" />
